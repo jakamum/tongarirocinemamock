@@ -1,0 +1,164 @@
+#cinema{
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-left:19rem;
+    display: grid;
+    grid-template-columns: repeat(17, 1fr); /* 16 seats per row */
+    grid-auto-rows: auto; /* Automatically adjust the row height */
+    width: 50%;
+    padding: 0;
+    align-content: center;
+
+    }
+
+.row-label{
+    font-size: large;
+    padding: .27rem;
+    font-weight: bold;
+}
+
+.seating-title{
+    margin-top: .5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: .2rem;   
+}
+.seating-title p{
+    font-weight: bold;
+    color: var(--black);
+}
+.seat {
+    border: 1px solid #ccc;
+    width: 25px;
+    height: 25px;
+    margin: .4rem;
+    background-color: rgb(236, 240, 236);
+    cursor: pointer;
+    text-align: center;
+    margin-left: .3rem;
+  }
+
+.seat-key{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 1rem;
+    
+}
+.seat-key p{
+    padding: .7rem;
+    padding-left: 0;
+    font-size: large;
+    padding-right: 2rem;
+    color: var(--black);
+}
+#wheelchair{
+    background-image: url('./images/1608737_wheelchair_icon.png');
+    background-size: cover; 
+
+}
+
+.seat.selected, #user-select{
+    background-color: green;
+    box-shadow: 0px 0px 10px green;
+}
+#reserved {
+    background-color: red;
+}
+.reserved{
+    background-color: red;
+}
+
+.seat.wheelchair {
+    background-image: url('./images/1608737_wheelchair_icon.png'); /* Update the URL to point to your image file */
+    background-size: cover;
+  }
+.checkout{
+    display: flex;
+    justify-content: center;
+    padding: 1.3rem;
+    margin: 0 auto;
+}
+
+#nextbtn{
+    z-index: 5;
+    background-color: var(--black);
+    text-align: center;
+    height: 2.8rem;
+    width: 8rem;
+    font-size: x-large;
+    border-radius: 5px;
+}
+#nextbtn:hover{
+    background-color: var(--paleblue);
+    color: var(--black);
+}
+
+p{
+    color: var(--black);
+}
+
+@media (max-width: 768px) {
+    #cinema{
+        margin: 0 auto;
+        margin-top: 1rem;
+        margin-left:0rem;
+        width: 10rem;
+        display: grid;
+        grid-template-columns: repeat(17, 1fr); /* 16 seats per row */
+        grid-auto-rows: auto; /* Automatically adjust the row height */
+ 
+        }
+        .pagetitle{
+            margin-bottom: 2rem;
+        }
+    .row-label{
+        font-size: 5.5px;
+        padding: .27rem;
+        font-weight: bold;
+        margin-left: .4rem;
+    }
+    .title{
+        margin-top: 1rem;
+        font-size: 2rem;       
+    }
+    .seating-title{
+        text-align: center;
+        font-size: 1rem;
+        padding: .2rem;   
+    }
+    .seating-title p{
+        font-weight: bold;
+        color: var(--black);
+    }
+    .seat {
+        border: 1px solid #ccc;
+        width: 13px;
+        height: 13px;
+        margin: .1rem;
+        background-color: rgb(236, 240, 236);
+        cursor: pointer;
+        text-align: center;
+        margin-left: .3rem;
+        }
+
+    .seat-key p{
+        padding: 0rem;
+        padding-left: 0;
+        font-size: small;
+        padding-right: .5rem;
+        color: var(--black);
+    }
+    .checkout{
+        display: flex;
+        justify-content: center;
+        padding: 1.3rem;
+        margin: 0 auto;
+    }
+    
+    #nextbtn{
+        height: 2rem;
+        width: 4rem;
+        font-size: medium;
+    }
+}

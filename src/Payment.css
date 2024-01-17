@@ -1,0 +1,155 @@
+.pay-container{
+    text-align: center;
+}
+
+.summary {
+    margin-left: 27rem;
+    margin-top: 3rem;
+    width: fit-content;
+    margin-bottom:1rem;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+
+}
+.details h3{
+    padding-bottom: 1rem;
+}
+.inputs{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 16.5rem;
+    margin-left: 27rem;
+    margin-bottom:1rem;
+    padding: 1rem 4.3rem;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+}
+.terms{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+}
+
+.term-conditions{
+    width: fit-content;
+    font-size: 1.1rem;
+    padding: 0 4.3rem;
+    margin-top: 1rem;
+    margin-left: 30rem;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+.payment h3{
+    padding-bottom: 1rem;
+}
+
+.payment-form form{
+    background-color: white;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.payment-option{
+    align-items: center;
+    color: var(--black);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 9rem;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+    padding-left: 0;
+    margin-bottom: .2rem;
+}
+.payment-option label{
+    padding-left: 2rem;
+}
+
+
+.term-conditions{
+    margin-left: 27rem;
+    margin-bottom:1rem;
+    width: 20rem;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.5);
+    padding-left: 0;
+    padding: 2rem 2rem;
+}
+
+.term-conditions input{
+   margin-left: 1.2rem;
+}
+
+.term-conditions label{
+    padding-left: 1rem;
+    
+}
+
+.credit-fields{
+    display: grid;
+    grid-template-rows: .5fr .5fr;
+   
+}
+.credit-fields label{
+    height: fit-content;
+}
+.credit-fields input{
+    padding-top: 0;
+    margin-top: 0;
+}
+  
+#cardHolder, #cardNumber{
+    width:15rem;
+}
+
+#expiryDate{
+    width: 45px; 
+    margin-right: 1.5rem;  
+}
+#csv{
+    width: 45px;   
+}
+
+.payment-option input{
+    margin-bottom: 2rem;
+}
+.credit-card-details{    
+    color: var(--black);
+    text-align: left;
+    margin-left: 1rem;
+}
+
+.credit-card-details label{
+    font-family: 'Arial, Helvetica', sans-serif;
+    font-size: small;
+}
+
+.credit-card-details input{
+    width:fit-content;
+
+}
+
+#pay-button, #no-match{
+    color: var(--white);
+    font-size: large;
+    padding: 1rem;
+    background-color: var(--black);
+    margin: 1rem;
+}
+#pay-button:hover, #no-match:hover{
+    color: var(--black);
+    background-color: var(--paleblue);
+    border: 1px solid var(--black);
+    
+}
+@media (max-width:(786vw)){
+    .stripborder{
+        padding-top: rem;
+    }
+    .summary {
+        margin-left: 0rem;
+        margin-top: 0rem;
+        width: 19rem;
+        margin-bottom:1rem;
+        box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);    
+    }
+    .title p{
+        font-size:3rem;
+    }
+    
+}

@@ -1,0 +1,39 @@
+.carousel-image-description{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1rem solid var(--black);
+}
+#movieimg{
+    width: 35rem;
+}
+h2{
+    font-size: 5rem;
+    font-weight: lighter;
+    font-family: 'Homenaje';
+    text-align: center;
+    margin-top: 6rem;
+    padding-right: 1.5rem;
+}
+
+@media (max-width: 768px) {
+
+    .slider{
+        margin: 0 auto;
+        width: 100vw;
+    }
+
+    .carousel-image-description{
+        display: flex;
+        flex-direction: row;
+        border: 1rem solid var(--black);
+        z-index: 5;
+        
+    }
+    .carousel-description{       
+        display: none;
+    }
+    
+    #movieimg{
+        width: 91vw;
+    }
+}

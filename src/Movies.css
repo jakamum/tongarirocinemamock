@@ -1,0 +1,179 @@
+.pagetitle{
+    width: 100%;
+    height: 16em;
+    display: grid;
+    grid-template-rows: .3fr .8fr .045fr;
+    text-align: center;
+}
+
+.stripborder{
+    height: 1em;
+    background-color:var(--paleblue);
+
+}
+.title{
+    height: .2em;
+    font-family: "homenaje", sans-serif;
+    font-size: 3em;
+    padding-bottom: 0%;
+}
+.movies{
+    padding-top: 5em;
+    padding-bottom: 5em;
+    display: grid;
+    grid-template-columns: .5fr 2fr;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.movieposter{
+    width: 11rem;
+    margin-left: 2rem;
+}
+.description{
+    display: grid;
+    grid-template-rows: .5fr .2fr;
+    font-size: large;
+    width: 75%;
+}
+.description h2{
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+    font-size: xx-large;
+    text-align: left;
+    
+}
+
+.description p{
+    color: rgb(178, 185, 190);
+    padding-bottom: 1em;
+
+}
+
+.modal{
+    margin-top: 1rem;
+}
+
+.select-title{
+    margin-top: 0;
+}
+
+
+button{
+    background-color: transparent;
+    color: var(--white);
+    border: transparent;
+    font-size: small;
+    padding-right: 1rem;
+}
+button:hover{
+    color: var(--white);
+    background-color:var(--paleblue);
+}
+.space{
+    background-color: transparent;
+    height: 10rem;
+}
+
+@media (max-width: 768px) {
+    .movies{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding-bottom: 2rem;
+    } 
+    
+    .movieposter{
+        width: 15rem;
+        margin-left: 3.8rem;
+    }
+    .description{
+        display: grid;
+        grid-template-rows: .5fr .2fr;
+        margin-left:3.3rem;
+        font-size: large;
+        width: 75%;
+    }
+    .description h2{
+        padding-top: 1rem;
+        padding-bottom: .5rem;
+        font-size: large;
+        text-align: left;
+       
+    }
+    
+    .description p{
+        color: rgb(178, 185, 190);
+        padding-bottom: 1em;
+    
+    }
+    
+    .modal{
+        margin-top: 1rem;
+    }
+    
+    .select-title{
+        margin-top: 0;
+    }
+    
+    
+    button{
+        background-color: transparent;
+        color: var(--white);
+        border: transparent;
+        font-size: small;
+        padding-right: 2rem;
+    }
+}
+/* Screens between 768px and 1024px in width (typical tablets) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .movies{
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        width: 120rem;
+    
+    }   
+    .movieposter{
+        width: 40rem;
+        margin-left: 3.8rem;
+    }
+    .description{
+        display: grid;
+        grid-template-rows: .5fr .2fr;
+        margin-left:3.3rem;
+        font-size: xx-large;
+        width: 75%;
+    }
+    .description h2{
+        padding-top: 1rem;
+        padding-bottom: 0rem;
+        font-size: xxx-large;
+        text-align: left;
+    
+    }
+
+    .description p{
+        color: rgb(178, 185, 190);
+        padding-bottom: 1em;
+
+    }
+
+    .modal{
+        margin-top: 1rem;
+    }
+
+    .select-title{
+        margin-top: 0;
+    }
+
+
+    button{
+        background-color: transparent;
+        color: var(--white);
+        border: transparent;
+        font-size: large;
+        padding-right: 2rem;
+    }
+
+}
