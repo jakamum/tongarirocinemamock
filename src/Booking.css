@@ -1,0 +1,157 @@
+.booking-form{
+    padding:1.5rem; 
+}
+.booking-form img{
+    width: 21rem;
+}
+#movie-img{
+    padding: 1.5rem;
+}
+.movie-img img{
+    width: 40rem;   
+}
+.booking-details {
+    background-color: var(--black);
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 100%;
+    height: auto;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    font-size: x-large;
+    color: var(--white);
+    background-color: var(--black);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;    
+}
+
+form h2{
+    font-size: 2.9rem;
+    margin-top: 1.5rem;
+    padding-bottom: .4rem;
+} 
+
+form label{
+    font-family: "Homenaje", sans-serif;
+    font-weight: bold;
+}
+form p {
+    color: var(--paleblue);
+    font-size: large;
+}
+
+.booking{
+    width:fit-content;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    max-width: 0 auto;
+    
+}
+
+.payment-container p{
+    font-size: large;
+    margin-left:3em;
+    margin-top: 1rem;
+    padding-right: 4rem;
+}
+
+.summary{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.confirm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: x-large;
+    background-color: var(--palerblue);
+    width: fit-content;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+}
+
+.totalprice{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:0;
+
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+    margin:0 auto; 
+}
+
+.confirm-button{
+ 
+    color: var(--white);
+    margin-top: 12rem;
+    font-size: x-large;
+    font-family:"Homenaje", sans-serif;
+    font-weight: bold;
+    padding: 1rem;
+    background-color: var(--black);
+}
+
+.confirm-button:hover {
+    color: var(--black);
+    border: 1px solid var(--black);
+    
+}
+
+label,
+select,
+input {
+    margin: 10px 0;
+}
+
+@media (max-width:(786vw)){
+    .title p{
+        font-size:3rem;
+    }
+    
+    .confirm{
+
+
+    }
+    .confirm h3{
+        
+
+    }
+    #movie-img{
+        padding: 0rem;
+
+    }
+     img{
+          width: 1rem;
+    }
+    .booking-details{
+        width:2rem;
+    }
+
+
+   }
+
+   /* Screens between 768px and 1024px in width (typical tablets) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+
+
+

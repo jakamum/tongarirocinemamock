@@ -1,0 +1,303 @@
+.footer{
+    background-color: var(--black);
+    display: grid;
+    grid-template-rows: .5fr .5fr;
+    position: relative;
+    width: 100%;
+
+}
+
+.logomenu{
+    display: grid;
+    grid-template-columns:.5fr 1fr .5fr 1fr;
+    width: max-content;
+
+}
+
+#logo2{
+    width: 12em;
+    margin-left: .5rem;
+}
+
+.social-media{
+    width: 5rem;
+    height: 2.7rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #353535;
+    padding: .4rem;
+    margin-left: 15rem;
+    padding-bottom: 0;   
+}
+
+#facebook, #instagram{
+    width: 2rem;
+    padding-left: .2rem;
+
+}
+
+.GooglePlay{
+    width: 20rem;
+
+}
+
+#SM{
+    width:17rem;
+    margin-right:25rem;
+}
+.footermenu a{
+    text-decoration: none;
+    color: var(--white);
+    
+
+}
+.menu-list{
+    text-align: right;
+    margin-right: .8rem;
+}
+.menu-list a{
+    font-size: large;
+}
+
+p{
+    color: var(--white);
+}
+.lowerlinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+} 
+
+.footermenu h3{
+    color: rgb(176, 181, 185);
+    text-align: center;
+    padding-bottom: .6rem;
+}
+
+.menu-list2{
+    width: 43rem;
+    display:grid;
+    grid-template-columns: 1.3fr .5fr .8fr 1fr 1fr;
+    justify-content: space-between;
+    padding-left: 10rem;
+    padding-right: 5rem;
+}
+
+.terms{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 0%; 
+  
+}
+.terms a{
+    text-decoration: none;
+
+}
+.privacy{
+    padding-right: 1rem;
+}
+
+.TCs{
+    text-align: right;
+}
+
+@media (max-width: 786px){
+    
+    .logomenu{
+        display: grid;
+        grid-template-columns:.5fr 1fr .5fr 1fr;
+        justify-content: right;
+        background-color: transparent;
+    }
+    
+    #logo2{
+        width: 7em;
+        margin-top:0rem;
+        padding-top:0rem;
+
+    }
+    
+    .social-media{
+      display: none;
+    }
+    
+    #facebook, #instagram{
+        display: none;  
+    
+    }
+    
+    .GooglePlay{
+        display: none;  
+    
+    }
+    
+    #SM{
+        display: none;  
+    }
+
+    .footermenu a{
+        margin-left:7rem;
+ 
+        padding:0rem;
+        text-decoration: none;
+        color: var(--white);     
+    }
+    .menu-list{
+        text-align: right;
+        margin-right: .8rem;
+    
+    }
+    .menu-list a{
+        font-size: medium;
+    }
+    
+    p{
+        color: var(--white);
+    }
+    .lowerlinks{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: baseline;;
+        margin:10rem 2rem;
+        
+        height: fit-content;
+    } 
+    
+    .footermenu h3{
+        display: none;
+    }
+    
+    .menu-list2{
+        display:none;
+    }
+    
+    .terms{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 0rem;
+        margin-right: 1rem;
+      
+    }
+    .terms a{
+        text-decoration: none;
+    
+    }
+
+    
+    .TCs{
+        text-align: right;
+        padding-left: 1rem;
+    }
+}
+/* Screens between 769px and 1024px in width (typical tablets) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+        
+    .footer{
+        background-color: var(--black);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+        width: 100%;
+    
+    }
+    
+    .logomenu{
+        display: grid;
+        grid-template-columns:1fr 5fr .5fr 5fr;
+        padding:0rem;
+        padding-left: 0rem;
+        margin: 0rem;
+        width: 100vw;
+    }
+    
+    #logo2{
+        width: 12em;
+        
+    }
+    
+    .social-media{
+        width: 5rem;
+        height: 2.7rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: #353535;
+        padding: .4rem;
+        margin-left: 8rem;
+        padding-bottom: 0;   
+    }
+    
+    #facebook, #instagram{
+        width: 2rem;
+        display: block;
+    
+    }
+    
+    .GooglePlay{
+        width: 20rem;
+        display: block;
+    
+    }
+    
+    #SM{
+        width:17rem;
+ 
+    }
+    .footermenu a{
+        text-decoration: none;
+        color: var(--white);    
+    }
+    .menu-list{
+        text-align: right;
+        margin-left: 5rem;
+        width:10rem;
+       
+    }
+    .menu-list a{
+        font-size: medium;
+    }
+    
+    p{
+        color: var(--white);
+    }
+    .lowerlinks{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-end;
+        margin-left: 0rem;
+        margin-bottom: 1rem;
+    } 
+    
+    .footermenu h3{
+        color: rgb(176, 181, 185);
+        text-align: center;
+        padding-bottom: .6rem;
+    }
+    
+    .menu-list2{
+        width: 43rem;
+        display:grid;
+        grid-template-columns: 1.3fr .5fr .8fr 1fr 1fr;
+        justify-content: space-between;
+        padding-left: 10rem;
+        padding-right: 5rem;
+    }
+    
+    .terms{
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+      
+    }
+
+    .privacy{
+        padding-right: 1rem;
+    }
+    
+    .TCs{
+        text-align: right;
+    }
+}    

@@ -1,0 +1,25 @@
+:root{
+--palerblue: #d1e0ea;
+--paleblue:#a3c3d8;
+--black: #000000;
+--white: aliceblue;
+--buttoncolor: #1908485f;
+}
+
+.App {
+  text-align: center;
+  
+}
+
+body{
+  background-color: var(--palerblue);
+}
+
+a{
+  cursor: pointer;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+

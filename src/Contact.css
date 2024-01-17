@@ -1,0 +1,35 @@
+.ContactForm {
+    background-color: var(--black);
+}
+
+#Contactform{
+    align-items: center;
+    width: 50%;
+}
+
+#username{
+    margin-top: 4rem;
+}
+  
+form input,
+form textarea {
+    width: 100%; 
+    padding: 10px;
+    margin-top: 2rem;
+    margin-bottom: 10px; 
+    border: 1px solid #ccc; 
+    font-family: "Homanaje", sans-serif;
+}
+form textarea{
+    width: 50rem;
+}
+
+#submitbtn{
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    color: var(--white);
+    font-size: large;
+    border: 1px solid var(--white);
+    width: 5rem;
+    height: 2rem;
+}

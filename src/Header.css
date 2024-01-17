@@ -1,0 +1,217 @@
+*{
+    margin:0;
+    box-sizing:0;  
+}
+
+nav{
+    height: 4em;
+    background-color: var(--black);
+    display: grid;
+    grid-template-columns: .1fr 2fr .5fr .2fr .1fr;
+    padding: 1em;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+.logo{
+    margin-left: 1rem;
+    width: fit-content;
+}
+
+#logo{
+    width:8rem;
+}
+
+.movie-login{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap:2rem;
+    padding-right: 0rem;
+    padding-left: 50rem;
+}
+
+#timestickets{
+    text-align: center;
+    z-index: 1;
+    color: var(--white);
+}
+.login{
+    margin-top: .5rem;
+}
+
+#login{
+    width: 2.5em;
+    margin-top: .6rem;
+    
+}
+.burger-menu{
+    height: 63%;
+    width: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.burger-bar{
+    width: 3em;
+    height: 0.2em;
+    background-color: var(--white);
+    border-radius: 0.5em;
+}
+
+.menu{
+    width: 8.2%;
+    height: fit-content;
+    background-color: var(--black);
+    position: absolute;
+    top: 5em;
+    z-index: 1;
+    border-bottom-right-radius: 0.5em;    
+}
+
+.menu-list {
+    list-style: none; 
+    margin-left: 0; 
+    padding-left: 0; 
+    margin-left: 0; 
+}
+.menu a {
+    color: var(--white); 
+    text-decoration: none; 
+    padding: 8px; 
+    display: block; 
+    font-size: large;
+    text-align: center;
+
+}
+.menu a:hover {
+    color: var(--paleblue); /* Change background color on hover */
+    border-radius: 5px; /* Add rounded corners on hover */
+}
+
+
+.hidden{
+    display:none;
+}
+.visible{
+    display: inherit;
+
+}
+.burger-bar.clicked:nth-child(1){
+    transform: rotate(45deg) translate(0.75em, 1.25em);
+    transition: ease-out 0.5s;
+}
+.burger-bar.clicked:nth-child(2){
+    transform: scale(0.1);
+    transition: ease-out 0.5s;
+}
+.burger-bar.clicked:nth-child(3){
+    transform: rotate(135deg) translate(-0.5em, 1em);
+    transition: ease-out 0.5s;
+
+}
+
+.burger-bar.unclicked{
+    transform: rotate(0)translate(0);
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275)0.5s;
+}
+
+@media (max-width: 768px) {
+
+    #logo{
+        width: 7rem;
+        padding-left: .8rem;
+    }
+
+    .movie-login{
+        display: flex;
+        flex-direction: row;
+        margin-left: 20rem;   
+    }
+    #timestickets{
+        margin-left: .6rem;
+        margin-bottom: .2rem;
+    }
+
+    .login{
+        margin-right: 3rem;
+        padding-left: 0rem;
+        margin-top: .5rem;
+    }
+    
+    #login{
+        display:none;
+        
+    } 
+
+    .burger-menu{
+        margin-top: .5rem;
+        width: 2em; 
+        margin-left: 0rem;
+        cursor: pointer;
+        margin-bottom: 1rem;
+    }
+    
+    .menu{
+        width: 20%;   
+    }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    nav{
+        height: 4em;
+        background-color: var(--black);
+        display: grid;
+        grid-template-columns: .1fr 2fr .5fr .2fr .1fr;
+        padding: 1em;
+        align-items: center;
+    }
+    
+    nav a{
+        text-decoration: none;
+        color: var(--white);
+    }
+    
+    .logo{
+        margin-left: 1rem;
+        width: fit-content;
+    }
+    
+    #logo{
+        width:8rem;
+    }
+    
+    .movie-login{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap:1rem;
+        padding-right: 0rem;
+        padding-left: 36rem;
+    }
+    
+    #timestickets{
+        text-align: center;
+        z-index: 1;
+        color: var(--white);
+    }
+    .login{
+        margin-top: .5rem;
+    }
+    
+    #login{
+        width: 2.5em;
+        margin-top: .6rem;
+        
+    }
+
+}
